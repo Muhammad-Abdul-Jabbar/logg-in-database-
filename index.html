@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Login + Firebase Database</title>
-         <!-- Cool Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-        <!-- Our stylesheet -->
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="content_container">
-            <div id="form_container">
-                <div id="form_header_container">
-                    <h2 id="form_header"> Login + Firebase Database </h2>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebase oppgave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-                <div id="form_content_container">
-                    <div id="form_content_inner_container">
-                        <input type="text" id="full_name" placeholder="Full name">
-                        <input type="email" id="email" placeholder="Email">
-                        <input type="password" id="password" placeholder="New Password">
-
-                        
-                        <div id="button_container">
-                            <button onclick="login()">Login</button>
-                            <button onclick="register()">Register</button>
-                        </div>
-
-                    </div>
-                </div>
+    <div class="container">
+        <h1>sign up page</h1>
+        <form onsubmit="signup(event)">
+            <div>
+                <input type="text" name="" id="firstname" placeholder="firstname">
             </div>
-        </div>
-    </body>
+            <div>
+                <input type="text" name="" id="lastname" placeholder="lastname">
+            </div>
+            <div>
+                <input type="text" name="" id="Email" placeholder="email">
+            </div>
+            <div>
+                <input type="password" name="" id="password" placeholder="password">
+            </div>
+            <button id="sinupinp" value="sign up">sign up</button>
+        </form>
+    </div>
 
-   
+</style>
 
+</body>
+<script src="app.js" type="module"></script>
 </html>
