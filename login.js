@@ -18,24 +18,32 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
  const auth = getAuth()
-
- var email = document.getElementById("email")
- var password = document.getElementById("password")
-
-  window.login=function(e){
-  e.preventDefault();
-  var obj = {
-  email:email.value,
-  password:password.value
-  };
-  signInWithEmailAndPassword(auth,obj.email,obj,password)
-  .then(function(success){
-console.log(user.uid)
-alert("loggin successfully") 
-  })
-  .catch(function(err){
-   
-alert("login error" + err)
-  });
-console.log(obj)
+ 
+ var email = document.getElementById("email");
+ var password = document.getElementById("password");
+ window.login= function(e) {
+   e.preventDefault();
+   var obj = {
+     email: email.value,
+     password: password.value,
+   };
+ 
+   signInWithEmailAndPassword(auth, obj.email, obj.password)
+     .then(function (success) {
+       alert("logined Successfully")
+       var aaaa =  (success.user.uid);
+       localStorage.setItem("uid",aaaa)
+       console.log(aaaa)
+       
+       
+       
+       window.location.replace('UserPage.html')
+      // localStorage.setItem(success,user,uid)
+       
+     })
+     .catch(function (err) {
+       alert("login error"+err);
+     });
+ 
+   console.log(obj);
  }
