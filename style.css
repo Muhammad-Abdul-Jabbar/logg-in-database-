@@ -82,3 +82,13 @@ body {
     background-color: #0056b3;
 }
 
+a {
+    color: blue; /* Farge på teksten */
+    text-decoration: none; /* Fjerner understrekning */
+    font-weight: bold; /* Gjør teksten fet */
+    font-family: Arial, sans-serif; /* Setter skrifttypen */
+     justify-content: space-around;
+}
+a:hover {
+    color: darkblue; /* Farge på teksten ved hover */
+}

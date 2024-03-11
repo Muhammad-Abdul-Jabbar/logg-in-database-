@@ -34,10 +34,7 @@
        var aaaa =  (success.user.uid);
        localStorage.setItem("uid",aaaa)
        console.log(aaaa)
-       
-       
-       
-       window.location.replace('UserPage.html')
+       window.location.href = "UserPage.html";
       // localStorage.setItem(success,user,uid)
        
      })
