@@ -5,39 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        .good {
-            color: green;
-            font-weight: bold;
-        }
-        .bad {
-            color: green;
-            font-weight: bold;
-        }
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Endret til en lysere gråfarge */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center; /* Sentrerer innholdet horisontalt */
+    align-items: center; /* Sentrerer innholdet vertikalt */
+    min-height: 100vh;
+}
+ 
+.container {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff; /* Hvit bakgrunn for innholdet */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Sentrerer teksten horisontalt */
+}
+ 
+h1 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 28px;
+}
+ 
+h3 {
+    color: #333;
+    margin-top: 15px;
+    font-size: 20px;
+}
+ 
+p {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+ 
+.accept-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+ 
+.accept-button:hover {
+    background-color: #0056b3;
+}
     </style>
 </head>
 <body>
-    <h1>Terms of Service</h1>
 
-    <p class="good">1. Your data is protected and will not be shared with third parties without your consent.</p>
-    <p class="good">2. You have the right to terminate your account at any time and your data will be promptly deleted upon request.</p>
-    <p class="good">3. We provide regular updates and improvements to enhance your user experience.</p>
-    <p class="bad">1. By using our service, you grant us unrestricted access to your personal data which may be shared with our partners.</p>
-    <p class="bad">2. We reserve the right to suspend or terminate your account at any time without prior notice or explanation.</p>
-    <p class="bad">3. We may change the terms of service without notifying you, and your continued use of the service constitutes acceptance of these changes.</p>
-
-    <p>Please review the terms carefully before using the service.</p>
-
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilkår og betingelser</title>
+<link rel="stylesheet" href="Service.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vilkår og betingelser for bruk av tjenesten</h1>
+        <p>Disse vilkårene og betingelsene regulerer bruken av tjenestene levert av gjennom vår plattform. Ved å bruke tjenesten vår, godtar du å følge disse vilkårene og betingelsene. Hvis du ikke godtar alle vilkårene og betingelsene, vennligst ikke bruk tjenesten vår.</p>
+ 
+        <h3>1. Ansvarsfraskrivelse</h3>
+        <p>Tjenesten vår tilbys "som den er" uten garantier av noen slag, verken uttrykt eller underforstått. Vi påtar oss ikke ansvar for nøyaktigheten, påliteligheten eller fullstendigheten av informasjonen som tilbys gjennom tjenesten vår. Enhver bruk av tjenesten skjer på egen risiko.</p>
+ 
+        <h3>2. Brukerkontoer</h3>
+        <p>Du kan bli bedt om å opprette en brukerkonto for å få tilgang til visse deler av tjenesten vår. Du er ansvarlig for å beskytte passordet ditt og for all aktivitet som skjer under kontoen din. Vi forbeholder oss retten til å suspendere eller avslutte kontoer ved mistanke om misbruk eller brudd på disse vilkårene og betingelsene.</p>
+ 
+        <h3>3. Opphavsrett og immaterielle rettigheter</h3>
+        <p>Alt innhold levert gjennom tjenesten vår, inkludert men ikke begrenset til tekst, bilder, logoer, og programvare, er beskyttet av opphavsrett og andre immaterielle rettigheter. Du samtykker i å respektere alle opphavsrettigheter og eiendomsrettigheter knyttet til tjenesten vår.</p>
+ 
+        <h3>4. Endringer i vilkår og betingelser</h3>
+        <p>Vi forbeholder oss retten til å endre disse vilkårene og betingelsene når som helst. Endringer vil tre i kraft umiddelbart etter at de er lagt ut på vår nettside. Din fortsatte bruk av tjenesten etter slike endringer utgjør aksept av de reviderte vilkårene og betingelsene.</p>
+ 
+        <h3>5. Lovvalg og tvisteløsning</h3>
+        <p>Disse vilkårene og betingelsene skal tolkes i samsvar med norsk lov. Enhver tvist som oppstår i forbindelse med disse vilkårene og betingelsene skal først forsøkes løst gjennom forhandlinger mellom partene. Dersom forhandlingene ikke fører til en løsning, skal tvisten avgjøres ved norske domstoler.</p>
+ 
+        <p>Ved å trykke på <button class="accept-button" onclick="godtar()">godtar</button> du disse vilkårene og betingelsene. Hvis du har spørsmål angående disse vilkårene og betingelsene, vennligst kontakt oss på [kontaktinformasjon].</p>
+    </div>
+ 
+    <script>
+        function godtar() {
+            if (confirm("Er du sikker på at du vil godta vilkårene og betingelsene?")) {
+                // Hvis brukeren godtar, kan du legge til handlingen du ønsker å utføre, for eksempel å omdirigere til en annen side
+                window.location.href = "hovedside.html";
+            }
+        }
+    </script>
+</body>
+</html>"
 
  <script src="login.js"></script>
  <script src="app.js"></script>
